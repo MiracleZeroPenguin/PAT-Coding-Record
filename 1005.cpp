@@ -1,17 +1,23 @@
 //会有一个测试结点出段错误，太烦了不想搞了
-//问题肯定出在record的溢出，只要加上大于100的条件判断就可以了但是实在太烦了
+//用map记录之后，多了一个正确的节点，但还是有一个边界测试过不了
+//太烦了，实在想不出来了
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include<map>
 using namespace std;
 
 int main(){
   int num;
   cin>>num;
   vector<int>inputs=vector<int>(num);
-  bool record[100]={false};
+  // bool record[100]={false};
+  map<int,bool>record;
   for(int i=0;i<num;i++){
     cin>>inputs[i];
+    record[inputs[i]]=false;    
+  }
+  for(int i=0;i<num;i++){
     int input=inputs[i];
     if(record[input]==false){
       while(input!=1){
@@ -28,9 +34,8 @@ int main(){
           }
           record[input]=true;
         }
+      }
     }
-    }
-    
   }
   sort(inputs.begin(),inputs.end());
   bool flag=false;
