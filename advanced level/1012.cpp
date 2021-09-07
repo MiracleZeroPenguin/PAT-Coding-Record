@@ -11,7 +11,7 @@ struct best{
   int rank,index;
 };
 
-struct student{
+struct student{  
   string ID;
   int score[4],rank[4];
   struct best bestRank;
