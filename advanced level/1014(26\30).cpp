@@ -1,4 +1,6 @@
 //1014 Waiting in Line (30 分)
+//26/30
+//f**k
 #include<iostream>
 #include<vector>
 #include<deque>
