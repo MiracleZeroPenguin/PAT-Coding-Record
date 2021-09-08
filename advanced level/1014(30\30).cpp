@@ -1,4 +1,5 @@
-  
+// 感谢https://github.com/liuchuo/PAT/blob/master/AdvancedLevel_C%2B%2B/1014.%20Waiting%20in%20Line%20(30).cpp
+// 但其实还是不知道自己错在哪个节点
 #include <iostream>
 #include <queue>
 #include <vector>
