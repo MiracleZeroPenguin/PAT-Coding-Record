@@ -4,6 +4,7 @@
 using namespace std;
 
 bool isPrime(int num){
+  if(num==1)return false;
   for(int i=2;i<=sqrt(num);i++){
     if(num%i==0)
       return false;
@@ -11,7 +12,7 @@ bool isPrime(int num){
   return true;
 }
 
-int reverse(int num,int radix){
+int reverse(int num,int radix){ 
   int ans=0;
   while(num!=0){
     ans=ans*radix+num%radix;
