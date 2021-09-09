@@ -69,6 +69,7 @@ void dfs(int root){
         minSendTmp+=Cmax/2-(minBackTmp+bikes[tnode]);
         minBackTmp=0;
       }else{
+        //多了车
         minBackTmp=minBackTmp+bikes[tnode]-Cmax/2;
       }
     }
