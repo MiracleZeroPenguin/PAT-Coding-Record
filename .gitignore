@@ -1,6 +1,5 @@
 *.dSYM
 *.bit
 *.out
-/.vscode
 main.cpp
 main.out
