@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    "*.ipynb": "jupyter",
-    "iostream": "cpp",
-    "*.tcc": "cpp",
-    "vector": "cpp",
-    "unordered_map": "cpp"
-  }
-}
